@@ -17,64 +17,64 @@ import static org.junit.jupiter.api.Assertions.fail;
  */
 public class WebSteps {
 
-    @Step("Starting web driver")
+    @Step("Запустить web-драйвер")
     public void startDriver() {
         maybeThrowSeleniumTimeoutException();
     }
 
-    @Step("Stopping web driver")
+    @Step("Остановить web-драйвер")
     public void stopDriver() {
         maybeThrowSeleniumTimeoutException();
     }
 
-    @Step("Open issues page `{owner}/{repo}`")
+    @Step("Открыть страницу задач `{owner}/{repo}`")
     public void openIssuesPage(final String owner, final String repo) {
         attachPageSource();
         maybeThrowElementNotFoundException();
     }
 
-    @Step("Open pull requests page `{owner}/{repo}`")
+    @Step("Открыть страницу пул-реквестов `{owner}/{repo}`")
     public void openPullRequestsPage(final String owner, final String repo) {
         attachPageSource();
         maybeThrowElementNotFoundException();
     }
 
-    @Step("Create pull request from branch `{branch}`")
+    @Step("Создать пул-реквест для ветки `{branch}`")
     public void createPullRequestFromBranch(final String branch) {
         maybeThrowElementNotFoundException();
     }
 
-    @Step("Create issue with title `{title}`")
+    @Step("Создать задачу с именем `{title}`")
     public void createIssueWithTitle(String title) {
         maybeThrowAssertionException(title);
     }
 
-    @Step("Close pull request for branch `{branch}`")
+    @Step("Закрыть пул-реквест для ветки `{branch}`")
     public void closePullRequestForBranch(final String branch) {
         maybeThrowAssertionException(branch);
     }
 
-    @Step("Close issue with title `{title}`")
+    @Step("Закрыть задачу с именем `{title}`")
     public void closeIssueWithTitle(final String title) {
         maybeThrowAssertionException(title);
     }
 
-    @Step("Check pull request for branch `{branch}` exists")
+    @Step("Проверить что пул-реквест для ветки с именем `{branch}` существует")
     public void shouldSeePullRequestForBranch(final String branch) {
         maybeThrowAssertionException(branch);
     }
 
-    @Step("Check issue with title `{title}` exists")
+    @Step("Проверить что задача с именем `{title}` существует")
     public void shouldSeeIssueWithTitle(final String title) {
         maybeThrowAssertionException(title);
     }
 
-    @Step("Check pull request for branch `{branch}` not exists")
+    @Step("Проверить что пул-реквест для ветки с именем `{branch}` не существует")
     public void shouldNotSeePullRequestForBranch(final String branch) {
         maybeThrowAssertionException(branch);
     }
 
-    @Step("Check issue with title `{title}` not exists")
+    @Step("Проверить что задача с именем `{title}` не существует")
     public void shouldNotSeeIssueWithTitle(final String title) {
         maybeThrowAssertionException(title);
     }
