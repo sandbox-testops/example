@@ -28,7 +28,7 @@ public class PullRequestsWebTest {
     @TM4J("AE-T6")
     @Story("Create new pull request")
     @Tags({@Tag("web")})
-    @DisplayName("[13] Creating new issue for authorized user")
+    @DisplayName("[13] Заведение новой задачи для авторизованного пользователя")
     public void shouldCreatePullRequest() {
         steps.openPullRequestsPage(OWNER, REPO);
         steps.createPullRequestFromBranch(BRANCH);
@@ -39,7 +39,7 @@ public class PullRequestsWebTest {
     @TM4J("AE-T7")
     @Story("Close existing pull request")
     @Tags({@Tag("web")})
-    @DisplayName(" [15] Deleting existing issue for authorized user")
+    @DisplayName(" [15] Удаление существующей задачи для авторизованного пользователя")
     public void shouldClosePullRequest() {
         steps.openPullRequestsPage(OWNER, REPO);
         steps.createPullRequestFromBranch(BRANCH);
