@@ -20,8 +20,8 @@ public class IssuesRestTest {
     @Story("Create new issue")
     @Layer("api")
     @Tags({@Tag("api")})
-    @DisplayName("[16] Create issue via api")
-    @ParameterizedTest(name = " (parameterized)")
+    @DisplayName("[16] Заведение новой задачи через API")
+    @ParameterizedTest(name = " (параметризованный)")
     @ValueSource(strings = {"First Note", "Second Note"})
     public void shouldCreateUserNote(@Param(value = "Title") String title) {
         steps.createIssueWithTitle(OWNER, REPO, title);
@@ -31,8 +31,8 @@ public class IssuesRestTest {
     @TM4J("AE-T2")
     @Story("Close existing issue")
     @Tags({@Tag("web")})
-    @DisplayName("[17] Close issue via api")
-    @ParameterizedTest(name = " (parameterized)")
+    @DisplayName("[17] Закрытие новой задачи через API")
+    @ParameterizedTest(name = " (параметризованный)")
     @ValueSource(strings = {"First Note", "Second Note"})
     public void shouldDeleteUserNote(@Param(value = "Title") String title) {
         steps.createIssueWithTitle(OWNER, REPO, title);
