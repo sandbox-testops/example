@@ -28,7 +28,7 @@ public class IssuesWebTest {
     @TM4J("AE-T3")
     @Story("Create new issue")
     @Tags({@Tag("web")})
-    @DisplayName("[12] Creating new issue authorized user")
+    @DisplayName("[12] Заведение новой задачи авторизованным пользователем")
     public void shouldCreateIssue() {
         steps.openIssuesPage(OWNER, REPO);
         steps.createIssueWithTitle(ISSUE_TITLE);
@@ -39,7 +39,7 @@ public class IssuesWebTest {
     @TM4J("AE-T4")
     @Story("Create new issue")
     @Tags({@Tag("web")})
-    @DisplayName("[11] Adding note to advertisement")
+    @DisplayName("[11] Добавление примечания к объявлению")
     public void shouldAddLabelToIssue() {
         steps.openIssuesPage(OWNER, REPO);
         steps.createIssueWithTitle(ISSUE_TITLE);
@@ -50,7 +50,7 @@ public class IssuesWebTest {
     @TM4J("AE-T5")
     @Story("Close existing issue")
     @Tags({@Tag("web")})
-    @DisplayName("[14] Closing new issue for authorized user")
+    @DisplayName("[14] Закрытие новой задачи для авторизованного пользователя")
     public void shouldCloseIssue() {
         steps.openIssuesPage(OWNER, REPO);
         steps.createIssueWithTitle(ISSUE_TITLE);
