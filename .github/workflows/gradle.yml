@@ -20,6 +20,7 @@ env:
   ALLURE_TESTPLAN_PATH: "./testplan.json"
   ALLURE_TOKEN: ${{ secrets.ALLURE_TOKEN }}
 
+
 jobs:
   tests:
     runs-on: ubuntu-latest
