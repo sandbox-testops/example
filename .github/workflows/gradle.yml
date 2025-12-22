@@ -53,3 +53,4 @@ jobs:
           ENDPOINT: 'sandbox.qatools.cloud'
           OS: 'macOS'
           VERSION: '5.2.0-sb'
+# end
